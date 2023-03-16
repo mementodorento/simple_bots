@@ -7,7 +7,7 @@ from aiogram.utils import executor
 from aiogram.utils.exceptions import BotBlocked, ChatNotFound, RetryAfter, TelegramAPIError
 
 
-proxi = "http://proxy.server:3128"
+proxi = "proxy"
 bot=Bot(token="TOKEN_API", proxy=proxi)
 dp = Dispatcher(bot)
 openai.api_key = "open_ai_key"
