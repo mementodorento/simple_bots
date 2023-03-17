@@ -60,7 +60,7 @@ async def echo(message: types.Message):
     user_name = message.new_chat_members[0].first_name
     await bot.send_message(message.chat.id, f"rules")
 @dp.message_handler(commands=['rules'])
-@dp.message_handler(commands=['правілы'])
+@dp.message_handler(commands=['rules_2'])
 async def rules(message: types.Message):
     await bot.send_message(chat_id=message.chat.id,text='1....,n')
 
@@ -70,7 +70,7 @@ async def slownik(message: types.Message):
 
 @dp.message_handler(commands=['link_2'])
 async def slownik(message: types.Message):
-    await bot.send_message(chat_id=message.chat.id, text = 'Кнігі :\n 1. "link_2')
+    await bot.send_message(chat_id=message.chat.id, text = '...text...')
 
 @dp.message_handler(commands=['link_2'])
 async def info(message: types.Message):
@@ -78,11 +78,11 @@ async def info(message: types.Message):
 
 @dp.message_handler(commands=['link_4'])
 async def gwary(message: types.Message):
-    await bot.send_message(chat_id=message.chat.id, text='/paleski - палескі дыялект')
+    await bot.send_message(chat_id=message.chat.id, text='/text')
 
 
 
-@dp.message_handler(commands=['zmudzit'])
+@dp.message_handler(commands=['command_n_1'])
 async def zmudzit(message: types.Message):
     input_array = message.text.split()[1:] #string
     break_marks = ['!', '.', '?', ';', ':', ',',')','(', ' ,', ' .', ', ','. ']
